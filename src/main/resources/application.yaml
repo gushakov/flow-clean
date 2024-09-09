@@ -1,0 +1,8 @@
+vaadin:
+  launch-browser: false
+  frontend:
+    hotdeploy: false
+
+spring:
+  application:
+    name: flow-clean

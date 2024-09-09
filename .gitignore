@@ -1,0 +1,10 @@
+node_modules
+target/
+**/frontend/index.html
+**/frontend/generated/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
