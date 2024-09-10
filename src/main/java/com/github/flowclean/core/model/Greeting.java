@@ -44,7 +44,7 @@ public class Greeting {
                 .filter(code -> code.equals(tag))
                 .findAny()
                 .map(Locale::forLanguageTag)
-                .orElseThrow(() -> new InvalidDomainObjectError("Sorry, this language is not supported yet"));
+                .orElseThrow(() -> new InvalidDomainObjectError("Sorry, this language is not supported yet."));
     }
 
 }

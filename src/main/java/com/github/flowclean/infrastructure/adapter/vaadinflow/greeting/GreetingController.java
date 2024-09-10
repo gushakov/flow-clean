@@ -29,12 +29,10 @@ public class GreetingController extends Component implements RouterLayout {
 
     private ComponentEventListener<ClickEvent<Button>> handleSayHello() {
         return event -> {
-            // get an instance of the use case
-            SayHelloInputPort useCase = useCase();
             // update bound properties of the view-model
             viewModel.update();
             // execute the use case passing input parameters bound to the view-model
-            useCase.issueGreeting(viewModel.getName(), viewModel.getSelectedLanguageTag());
+            useCase().issueGreeting(viewModel.getName(), viewModel.getSelectedLanguageTag());
         };
     }
 
